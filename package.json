@@ -1,0 +1,26 @@
+{
+  "name": "laserbot",
+  "version": "0.0.1",
+  "main": "laserbot.js",
+  "scripts": {
+    "watch": "npm run build -- --watch",
+    "build": "node_modules/.bin/webpack",
+    "optimize": "node_modules/.bin/solcjs --optimize --bin laserbot.sol",
+    "abi": "node_modules/.bin/solcjs --abi laserbot.sol",
+    "contracts": "npm run abi && npm run optimize"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ethjs-contract": "^0.2.3",
+    "ethjs-query": "^0.3.8"
+  },
+  "devDependencies": {
+    "@webpack-cli/init": "^0.0.8",
+    "solc": "^0.4.24",
+    "webpack": "^4.12.0",
+    "webpack-cli": "^3.0.8"
+  },
+  "description": ""
+}
