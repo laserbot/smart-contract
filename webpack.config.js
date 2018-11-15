@@ -2,11 +2,11 @@ const path = require('path')
 
 module.exports = {
   mode: "production",
-  entry: "./index.js",
+  entry: "./src/js/app.js",
   output: {
-    path: path.resolve(__dirname, "dist"),
+    path: path.resolve(__dirname, "build", "js"),
     filename: "bundle.js",
-    library: "DollarGame",
+    library: "LaserBot",
     libraryTarget: "var"
   }
 }

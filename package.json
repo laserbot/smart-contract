@@ -1,26 +1,23 @@
 {
   "name": "laserbot",
   "version": "0.0.1",
-  "main": "laserbot.js",
-  "scripts": {
-    "watch": "npm run build -- --watch",
-    "build": "node_modules/.bin/webpack",
-    "optimize": "node_modules/.bin/solcjs --optimize --bin laserbot.sol",
-    "abi": "node_modules/.bin/solcjs --abi laserbot.sol",
-    "contracts": "npm run abi && npm run optimize"
+  "description": "",
+  "main": "truffle.js",
+  "directories": {
+    "test": "test"
   },
-  "keywords": [],
+  "scripts": {
+    "dev": "lite-server",
+    "ganache": "node_modules/.bin/ganache-cli --verbose",
+    "deploy": "node_modules/.bin/truffle deploy"
+  },
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "ethjs-contract": "^0.2.3",
-    "ethjs-query": "^0.3.8"
-  },
   "devDependencies": {
-    "@webpack-cli/init": "^0.0.8",
-    "solc": "^0.4.24",
-    "webpack": "^4.12.0",
-    "webpack-cli": "^3.0.8"
-  },
-  "description": ""
+    "ganache-cli": "^6.1.8",
+    "lite-server": "^2.4.0",
+    "truffle": "^4.1.14",
+    "webpack": "^4.25.1",
+    "webpack-cli": "^3.1.2"
+  }
 }
